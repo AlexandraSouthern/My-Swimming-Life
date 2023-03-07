@@ -14,6 +14,7 @@
 		5EFA0E9129B719CB0044C720 /* My_Swimming_LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E9029B719CB0044C720 /* My_Swimming_LifeTests.swift */; };
 		5EFA0E9B29B719CB0044C720 /* My_Swimming_LifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E9A29B719CB0044C720 /* My_Swimming_LifeUITests.swift */; };
 		5EFA0E9D29B719CB0044C720 /* My_Swimming_LifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E9C29B719CB0044C720 /* My_Swimming_LifeUITestsLaunchTests.swift */; };
+		5EFA0EAA29B71D230044C720 /* MyNewTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0EA929B71D230044C720 /* MyNewTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5EFA0E9629B719CB0044C720 /* My Swimming LifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Swimming LifeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0E9A29B719CB0044C720 /* My_Swimming_LifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Swimming_LifeUITests.swift; sourceTree = "<group>"; };
 		5EFA0E9C29B719CB0044C720 /* My_Swimming_LifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Swimming_LifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5EFA0EA929B71D230044C720 /* MyNewTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */,
 				5EFA0E8129B719C70044C720 /* ContentView.swift */,
+				5EFA0EA929B71D230044C720 /* MyNewTime.swift */,
 				5EFA0E8329B719CB0044C720 /* Assets.xcassets */,
 				5EFA0E8529B719CB0044C720 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFA0E8229B719C70044C720 /* ContentView.swift in Sources */,
+				5EFA0EAA29B71D230044C720 /* MyNewTime.swift in Sources */,
 				5EFA0E8029B719C70044C720 /* My_Swimming_LifeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
