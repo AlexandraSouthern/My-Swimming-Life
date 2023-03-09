@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E61728E29B982A500EB42BC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61728D29B982A500EB42BC /* FirebaseAnalytics */; };
+		5E61729029B982A500EB42BC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61728F29B982A500EB42BC /* FirebaseDatabase */; };
+		5E61729229B982A500EB42BC /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729129B982A500EB42BC /* FirebaseDatabaseSwift */; };
+		5E61729429B982A500EB42BC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729329B982A500EB42BC /* FirebaseFirestore */; };
+		5E61729629B982A500EB42BC /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729529B982A500EB42BC /* FirebaseFirestoreCombine-Community */; };
+		5E61729829B982A500EB42BC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729729B982A500EB42BC /* FirebaseFirestoreSwift */; };
+		5E61729A29B982A500EB42BC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729929B982A500EB42BC /* FirebaseStorage */; };
+		5E61729C29B982A500EB42BC /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729B29B982A500EB42BC /* FirebaseStorageCombine-Community */; };
+		5E61729E29B9833700EB42BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E61729D29B9833600EB42BC /* GoogleService-Info.plist */; };
 		5EFA0E8029B719C70044C720 /* My_Swimming_LifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */; };
 		5EFA0E8229B719C70044C720 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E8129B719C70044C720 /* ContentView.swift */; };
 		5EFA0E8429B719CB0044C720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA0E8329B719CB0044C720 /* Assets.xcassets */; };
@@ -35,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E61729D29B9833600EB42BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5EFA0E7C29B719C70044C720 /* My Swimming Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Swimming Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Swimming_LifeApp.swift; sourceTree = "<group>"; };
 		5EFA0E8129B719C70044C720 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +63,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E61729229B982A500EB42BC /* FirebaseDatabaseSwift in Frameworks */,
+				5E61729429B982A500EB42BC /* FirebaseFirestore in Frameworks */,
+				5E61729C29B982A500EB42BC /* FirebaseStorageCombine-Community in Frameworks */,
+				5E61729029B982A500EB42BC /* FirebaseDatabase in Frameworks */,
+				5E61729629B982A500EB42BC /* FirebaseFirestoreCombine-Community in Frameworks */,
+				5E61729A29B982A500EB42BC /* FirebaseStorage in Frameworks */,
+				5E61728E29B982A500EB42BC /* FirebaseAnalytics in Frameworks */,
+				5E61729829B982A500EB42BC /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +117,7 @@
 				5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */,
 				5EFA0E8129B719C70044C720 /* ContentView.swift */,
 				5EFA0EA929B71D230044C720 /* MyNewTime.swift */,
+				5E61729D29B9833600EB42BC /* GoogleService-Info.plist */,
 				5EFA0E8329B719CB0044C720 /* Assets.xcassets */,
 				5EFA0E8529B719CB0044C720 /* Preview Content */,
 			);
@@ -146,6 +165,16 @@
 			dependencies = (
 			);
 			name = "My Swimming Life";
+			packageProductDependencies = (
+				5E61728D29B982A500EB42BC /* FirebaseAnalytics */,
+				5E61728F29B982A500EB42BC /* FirebaseDatabase */,
+				5E61729129B982A500EB42BC /* FirebaseDatabaseSwift */,
+				5E61729329B982A500EB42BC /* FirebaseFirestore */,
+				5E61729529B982A500EB42BC /* FirebaseFirestoreCombine-Community */,
+				5E61729729B982A500EB42BC /* FirebaseFirestoreSwift */,
+				5E61729929B982A500EB42BC /* FirebaseStorage */,
+				5E61729B29B982A500EB42BC /* FirebaseStorageCombine-Community */,
+			);
 			productName = "My Swimming Life";
 			productReference = 5EFA0E7C29B719C70044C720 /* My Swimming Life.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 5EFA0E7329B719C70044C720;
+			packageReferences = (
+				5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5EFA0E7D29B719C70044C720 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +268,7 @@
 			files = (
 				5EFA0E8729B719CB0044C720 /* Preview Assets.xcassets in Resources */,
 				5EFA0E8429B719CB0044C720 /* Assets.xcassets in Resources */,
+				5E61729E29B9833700EB42BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +614,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E61728D29B982A500EB42BC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		5E61728F29B982A500EB42BC /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		5E61729129B982A500EB42BC /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		5E61729329B982A500EB42BC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5E61729529B982A500EB42BC /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		5E61729729B982A500EB42BC /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		5E61729929B982A500EB42BC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5E61729B29B982A500EB42BC /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E61728C29B982A500EB42BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EFA0E7429B719C70044C720 /* Project object */;
 }
