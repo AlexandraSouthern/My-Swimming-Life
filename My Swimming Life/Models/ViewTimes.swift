@@ -2,7 +2,7 @@
 //  ViewTimes.swift
 //  My Swimming Life
 //
-//  Created by Alexandra Southern on 9/3/2023.
+//  Created by Alexandra Southern on 10/3/2023.
 //
 
 import Foundation
@@ -10,30 +10,35 @@ import Firebase
 
 class ViewTimes: ObservableObject {
     
-    @Published var list = [Times]()
+    @Published var list = [SwimTimes]()
     
-    func addTimes(Name: String, Comp: String, Distance: Int, Stroke: String, Time: Int) {
+    func addData(Comp: String, Distance: String, Stroke: String, Time: String) {
         
+        // Get a reference to the database
         let db = Firestore.firestore()
         
-        db.collection("Swim Times").addDocument(data: ["Name":Name, "Comp":Comp, "Distance":Distance, "Stroke":Stroke, "Time":Time]) { error in
+        // Add a document to a collection
+        db.collection("Swim Times").addDocument(data: ["Comp":Comp, "Distance":Distance, "Stroke":Stroke, "Time":Time]) { error in
             
+            // Check for errors
             if error == nil {
-                self.getTimes()
+                // No errors
+                
+                // Call get data to retrieve latest data
+                self.getData()
             }
             else {
-                
+                // Handle the error
             }
         }
-        
     }
     
     
-    func getTimes() {
+    
+    func getData() {
         
-        // Get a reference  to the database
+        // Get a reference to the database
         let db = Firestore.firestore()
-        
         
         // Read the documents at a specific path
         db.collection("Swim Times").getDocuments { snapshot, error in
@@ -51,22 +56,20 @@ class ViewTimes: ObservableObject {
                         self.list = snapshot.documents.map { d in
                             
                             //create timedetails for each document
-                            return Times(id: d.documentID,
-                                        Name: d["Name"] as? String ?? "",
+                            return SwimTimes(id: d.documentID,
                                         Comp: d["Comp"] as? String ?? "",
-                                        Distance: d["Distance"] as? Int ?? Int(),
-                                        PersonalBest: d["Personal Best"] as? Bool ?? false,
+                                        Distance: d["Distance"] as? String ?? "",
                                         Stroke: d["Stroke"] as? String ?? "",
-                                        Time: d["Time"] as? Int ?? Int())
+                                        Time: d["Time"] as? String ?? "")
                         }
                     }
+                    
+                    
                 }
             }
             else {
-                // handle the error
+                // Handle the error
             }
         }
-        
     }
-    
 }

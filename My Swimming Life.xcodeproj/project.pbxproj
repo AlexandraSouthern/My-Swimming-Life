@@ -16,10 +16,9 @@
 		5E61729A29B982A500EB42BC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729929B982A500EB42BC /* FirebaseStorage */; };
 		5E61729C29B982A500EB42BC /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5E61729B29B982A500EB42BC /* FirebaseStorageCombine-Community */; };
 		5E61729E29B9833700EB42BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E61729D29B9833600EB42BC /* GoogleService-Info.plist */; };
-		5E6172A229B9E6FB00EB42BC /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172A129B9E6FB00EB42BC /* Times.swift */; };
-		5E6172A429B9E84100EB42BC /* ViewTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172A329B9E84100EB42BC /* ViewTimes.swift */; };
-		5E6172A829B9F18100EB42BC /* MyTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172A729B9F18100EB42BC /* MyTimes.swift */; };
-		5E6172AA29BA011C00EB42BC /* NewTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172A929BA011B00EB42BC /* NewTime.swift */; };
+		5E6172AE29BA12E800EB42BC /* ViewTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172AD29BA12E800EB42BC /* ViewTimes.swift */; };
+		5E6172B029BA14C000EB42BC /* SwimTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172AF29BA14C000EB42BC /* SwimTimes.swift */; };
+		5E6172B429BA20C000EB42BC /* AddTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6172B329BA20C000EB42BC /* AddTime.swift */; };
 		5EFA0E8029B719C70044C720 /* My_Swimming_LifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */; };
 		5EFA0E8229B719C70044C720 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0E8129B719C70044C720 /* ContentView.swift */; };
 		5EFA0E8429B719CB0044C720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA0E8329B719CB0044C720 /* Assets.xcassets */; };
@@ -49,10 +48,9 @@
 
 /* Begin PBXFileReference section */
 		5E61729D29B9833600EB42BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5E6172A129B9E6FB00EB42BC /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
-		5E6172A329B9E84100EB42BC /* ViewTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTimes.swift; sourceTree = "<group>"; };
-		5E6172A729B9F18100EB42BC /* MyTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimes.swift; sourceTree = "<group>"; };
-		5E6172A929BA011B00EB42BC /* NewTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTime.swift; sourceTree = "<group>"; };
+		5E6172AD29BA12E800EB42BC /* ViewTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTimes.swift; sourceTree = "<group>"; };
+		5E6172AF29BA14C000EB42BC /* SwimTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimTimes.swift; sourceTree = "<group>"; };
+		5E6172B329BA20C000EB42BC /* AddTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTime.swift; sourceTree = "<group>"; };
 		5EFA0E7C29B719C70044C720 /* My Swimming Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Swimming Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Swimming_LifeApp.swift; sourceTree = "<group>"; };
 		5EFA0E8129B719C70044C720 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,8 +100,8 @@
 		5E6172A029B9E6D300EB42BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5E6172A129B9E6FB00EB42BC /* Times.swift */,
-				5E6172A329B9E84100EB42BC /* ViewTimes.swift */,
+				5E6172AD29BA12E800EB42BC /* ViewTimes.swift */,
+				5E6172AF29BA14C000EB42BC /* SwimTimes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,8 +132,7 @@
 				5EFA0E7F29B719C70044C720 /* My_Swimming_LifeApp.swift */,
 				5EFA0E8129B719C70044C720 /* ContentView.swift */,
 				5EFA0EA929B71D230044C720 /* MyNewTime.swift */,
-				5E6172A729B9F18100EB42BC /* MyTimes.swift */,
-				5E6172A929BA011B00EB42BC /* NewTime.swift */,
+				5E6172B329BA20C000EB42BC /* AddTime.swift */,
 				5E6172A029B9E6D300EB42BC /* Models */,
 				5E61729D29B9833600EB42BC /* GoogleService-Info.plist */,
 				5EFA0E8329B719CB0044C720 /* Assets.xcassets */,
@@ -313,13 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E6172AA29BA011C00EB42BC /* NewTime.swift in Sources */,
-				5E6172A229B9E6FB00EB42BC /* Times.swift in Sources */,
+				5E6172B429BA20C000EB42BC /* AddTime.swift in Sources */,
 				5EFA0E8229B719C70044C720 /* ContentView.swift in Sources */,
-				5E6172A429B9E84100EB42BC /* ViewTimes.swift in Sources */,
 				5EFA0EAA29B71D230044C720 /* MyNewTime.swift in Sources */,
-				5E6172A829B9F18100EB42BC /* MyTimes.swift in Sources */,
 				5EFA0E8029B719C70044C720 /* My_Swimming_LifeApp.swift in Sources */,
+				5E6172AE29BA12E800EB42BC /* ViewTimes.swift in Sources */,
+				5E6172B029BA14C000EB42BC /* SwimTimes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

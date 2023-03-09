@@ -13,9 +13,16 @@ struct MyNewTime: View {
         @State var strokeChoice = "Stroke"
         @State var compChoice = "Comp"
         @State var distanceChoice = "Distance"
+        @State var Time = ""
+        @State var message: String = ""
+        @State var showingAlert = false
+
+
     
     var body: some View {
         VStack {
+            
+            
             
             Text("My New Time").font(.largeTitle).foregroundColor(.black).fontWeight(.bold)
                 .padding()
@@ -119,9 +126,32 @@ struct MyNewTime: View {
                 )
             }
             
-            .padding()
+            TextField("Time", text: $Time)
+                .keyboardType(.numberPad)
+                .multilineTextAlignment(.center)
+            
+                .padding()
+            
+            Button("Add New Time") {
+                if showingAlert == true {
+                    message = distanceChoice + " " + strokeChoice + " Time: " + Time + " " + compChoice
+                    }
+                else {
+                    message = distanceChoice + " " + strokeChoice + " Time: " + Time + " " + compChoice
+
+                }
+                showingAlert.toggle()
+               }
+            
+               .alert(isPresented: $showingAlert) {
+                   Alert(
+                       title: Text("New Time :)"),
+                       message: Text(message)
+                   )
+               }
+           }
+
         }
-    }
 }
 
 struct MyNewTime_Previews: PreviewProvider {

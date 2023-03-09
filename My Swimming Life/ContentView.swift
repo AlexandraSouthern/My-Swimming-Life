@@ -6,26 +6,27 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    
+    
+    
     var body: some View {
+        
         NavigationView {
             
             List{
                 
-                NavigationLink(destination: NewTime()) { Text("Add New Time") }
                 
                 NavigationLink(destination: MyNewTime()) { Text("My New Time") }
                 
-                NavigationLink(destination: MyTimes()) { Text("My Times") }
-                
-                
+                NavigationLink(destination: AddTime()) { Text("Add New Time (Not working)") }
 
                 
             }
             .navigationTitle("My Swimming Life")
         }
-                        
     }
 }
 
@@ -34,3 +35,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+
