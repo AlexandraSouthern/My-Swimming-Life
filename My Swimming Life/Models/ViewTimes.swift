@@ -12,13 +12,13 @@ class ViewTimes: ObservableObject {
     
     @Published var list = [SwimTimes]()
     
-    func addData(Comp: String, Distance: String, Stroke: String, Time: String) {
+    func addData(Comp: String, Distance: String, Name: String, Stroke: String, Time: String) {
         
         // Get a reference to the database
         let db = Firestore.firestore()
         
         // Add a document to a collection
-        db.collection("Swim Times").addDocument(data: ["Comp":Comp, "Distance":Distance, "Stroke":Stroke, "Time":Time]) { error in
+        db.collection("Swim Times").addDocument(data: ["Comp": Comp, "Distance": Distance, "Name": Name, "Stroke": Stroke, "Time": Time]) { error in
             
             // Check for errors
             if error == nil {
@@ -59,6 +59,7 @@ class ViewTimes: ObservableObject {
                             return SwimTimes(id: d.documentID,
                                         Comp: d["Comp"] as? String ?? "",
                                         Distance: d["Distance"] as? String ?? "",
+                                        Name: d["Name"] as? String ?? "",
                                         Stroke: d["Stroke"] as? String ?? "",
                                         Time: d["Time"] as? String ?? "")
                         }

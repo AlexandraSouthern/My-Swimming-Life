@@ -21,7 +21,7 @@ struct ContentView: View {
                 
                 NavigationLink(destination: MyNewTime()) { Text("My New Time") }
                 
-                NavigationLink(destination: AddTime()) { Text("Add New Time (Not working)") }
+                NavigationLink(destination: AddTime()) { Text("Add New Time") }
 
                 
             }

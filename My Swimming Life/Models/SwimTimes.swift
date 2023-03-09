@@ -12,6 +12,7 @@ struct SwimTimes: Identifiable {
     var id: String
     var Comp: String
     var Distance: String
+    var Name: String
     var Stroke: String
     var Time: String
     
