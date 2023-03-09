@@ -10,7 +10,7 @@ import SwiftUI
 struct MyNewTime: View {
         @State var strokeChoice = "Stroke"
         @State var compChoice = "Comp"
-        @State var distanceCoice = "Distance"
+        @State var distanceChoice = "Distance"
     
     var body: some View {
         VStack {
@@ -74,43 +74,43 @@ struct MyNewTime: View {
             
             Menu {
                 Button(action: {
-                    distanceCoice = "1500m"
+                    distanceChoice = "1500m"
                 }, label: {
                     Text("1500m")
                 })
                 Button(action: {
-                    distanceCoice = "800m"
+                    distanceChoice = "800m"
                 }, label: {
                     Text("800m")
                 })
                 Button(action: {
-                    distanceCoice = "400m"
+                    distanceChoice = "400m"
                 }, label: {
                     Text("400m")
                 })
                 Button(action: {
-                    distanceCoice = "200m"
+                    distanceChoice = "200m"
                 }, label: {
                     Text("200m")
                 })
                 Button(action: {
-                    distanceCoice = "100m"
+                    distanceChoice = "100m"
                 }, label: {
                     Text("100m")
                 })
                 Button(action: {
-                    distanceCoice = "50m"
+                    distanceChoice = "50m"
                 }, label: {
                     Text("50m")
                 })
                 Button(action: {
-                    distanceCoice = "25m"
+                    distanceChoice = "25m"
                 }, label: {
                     Text("25m")
                 })
             } label: {
                 Label (
-                    title: {Text("\(distanceCoice)") },
+                    title: {Text("\(distanceChoice)") },
                     icon: {Image(systemName: "") }
                 )
             }
