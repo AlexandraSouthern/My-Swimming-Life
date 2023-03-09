@@ -13,9 +13,13 @@ struct ContentView: View {
             
             List{
                 
+                NavigationLink(destination: NewTime()) { Text("Add New Time") }
+                
                 NavigationLink(destination: MyNewTime()) { Text("My New Time") }
                 
                 NavigationLink(destination: MyTimes()) { Text("My Times") }
+                
+                
 
                 
             }

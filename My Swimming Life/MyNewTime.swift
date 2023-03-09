@@ -6,20 +6,24 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct MyNewTime: View {
+    
         @State var strokeChoice = "Stroke"
         @State var compChoice = "Comp"
         @State var distanceChoice = "Distance"
     
     var body: some View {
         VStack {
+            
             Text("My New Time").font(.largeTitle).foregroundColor(.black).fontWeight(.bold)
                 .padding()
+            
             Menu {
                 
                 Button(action: {
-                    strokeChoice = "Long Course"
+                    compChoice = "Long Course"
                 }, label: {
                     Text("Long Course")
                 })

@@ -10,17 +10,17 @@ import Firebase
 
 struct MyTimes: View {
     
-    @ObservedObject var model = ViewTimes()
+    @ObservedObject var MyTimes = ViewTimes()
     
     var body: some View {
             
-        List (model.list) { item in
+        List (MyTimes.list) { item in
             Text(item.Name)
         }
     }
     
     init() {
-        model.getTimes()
+        MyTimes.getTimes()
     }
 }
 
